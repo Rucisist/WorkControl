@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TodaysWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfF-Ya-JQJ" customClass="CircleView" customModule="TodaysWork" customModuleProvider="target">
+                                <rect key="frame" x="146.5" y="5" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CfF-Ya-JQJ" secondAttribute="height" multiplier="1:1" id="l4n-Ge-9rx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyd-ES-MoE">
+                                <rect key="frame" x="4.5" y="-10" width="311" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Type here to refresh">
+                                    <color key="titleColor" red="0.18039215689999999" green="0.63137254899999995" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButtonPress:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="nkm-hY-A3Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wyd-ES-MoE" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="Eui-c7-g04"/>
+                            <constraint firstItem="CfF-Ya-JQJ" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="LFL-GG-FdK"/>
+                            <constraint firstItem="CfF-Ya-JQJ" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="Trs-kg-1ia"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="CfF-Ya-JQJ" secondAttribute="bottom" constant="5" id="h0W-A3-VIA"/>
+                            <constraint firstItem="CfF-Ya-JQJ" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="nCP-Pa-MMH"/>
+                            <constraint firstItem="Wyd-ES-MoE" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="p68-dW-KCt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="littleCircleView" destination="CfF-Ya-JQJ" id="erq-Gs-eYS"/>
+                        <outlet property="typeButton" destination="Wyd-ES-MoE" id="GDc-r7-x14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
