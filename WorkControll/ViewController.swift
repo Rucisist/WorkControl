@@ -85,14 +85,14 @@ class ViewController: UIViewController {
         let hours = Int(seconds) / 3600
         let minutes = (Int(seconds) % 3600) / 60
         
-        let fromCalendar = Calendar.current.dateComponents(in: TimeZone.init(secondsFromGMT: 0)!, from: Date.init(timeIntervalSinceReferenceDate: lastDate + 180.0*60.0))
-        let toCalendar = Calendar.current.dateComponents(in: TimeZone.init(secondsFromGMT: 0)!, from: Date.init(timeIntervalSinceReferenceDate: lastDate + ViewController.workingHours + 180.0*60.0))
-
-        labelFrom.text = String(format: "%d : %d", fromCalendar.hour!, fromCalendar.minute!)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
         
-        labelTo.text = String(format: "%d : %d", toCalendar.hour!, toCalendar.minute!)
+        labelFrom.text = dateFormatter.string(from: Date(timeIntervalSinceReferenceDate: lastDate))
         
-        var str = minutes/10 >= 1 ? String(format: "%d:%d", hours, minutes) : String(format: "%d:0%d", hours, minutes)
+        labelTo.text = dateFormatter.string(from: Date(timeIntervalSinceReferenceDate: lastDate + ViewController.workingHours))
+        
+        var str = minutes/10 >= 1 ? String(format: "0%d:%d", hours, minutes) : String(format: "0%d:0%d", hours, minutes)
         
         if hours <= 0, minutes <= 0 {
             str = "It's time to go"
