@@ -22,13 +22,10 @@ class CircleView: UIView {
         let radius = frame.width/2
 
         path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(-Double.pi/2), endAngle: CGFloat(2*Double.pi*percent - 0.5*Double.pi), clockwise: true)
-//        path?.addLine(to: center)
-//        path?.close()
         
         shapeLayer.path = path?.cgPath
         let newColor = UIColor(red: 154.0/255, green: 194.0/255, blue: 197.0/255, alpha: 1.0)
         shapeLayer.strokeColor = newColor.cgColor
-        let color = tintColor.withAlphaComponent(0.3)
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 2.0
     }

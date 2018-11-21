@@ -18,7 +18,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     var percent = 0.0
     var currentDate = Date.timeIntervalSinceReferenceDate
-    var lastDate: Double = UserDefaults.standard.double(forKey: "lastDate")
+    var lastDate: Double = (UserDefaults(suiteName: "group.workApp.me")?.double(forKey: "lastDate"))!//UserDefaults.standard.double(forKey: "lastDate")
     var isContinue: Bool = false
     
     static let workingHours = 520.0 * 60.0
@@ -48,7 +48,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     @IBAction func typeButtonPress(_ sender: Any) {
-        self.lastDate = UserDefaults.standard.double(forKey: "lastDate")
+        self.lastDate = (UserDefaults(suiteName: "group.workApp.me")?.double(forKey: "lastDate"))!
     }
     
     @objc func doOnTimer() {
@@ -60,7 +60,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let minutes = (Int(seconds) % 3600) / 60
         
         
-        let str = minutes/10 >= 1 ? String(format: "%d:%d", hours, minutes) : String(format: "%d:0%d", hours, minutes)
+        var str = minutes/10 >= 1 ? String(format: "%d:%d", hours, minutes) : String(format: "%d:0%d", hours, minutes)
+        
+        if hours <= 0, minutes <= 0 {
+            timer.invalidate()
+            str = "It's time to go"
+            littleCircleView.isHidden = true
+        }
         
         typeButton.setTitle(str, for: .normal)
     }

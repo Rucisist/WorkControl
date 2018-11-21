@@ -56,6 +56,8 @@
 		26C06E3721A551EB00393392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26C06E4421A563E300393392 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		26C06E4721A58BBA00393392 /* TheDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheDate.swift; sourceTree = "<group>"; };
+		26C06E4E21A5C11900393392 /* TodaysWork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodaysWork.entitlements; sourceTree = "<group>"; };
+		26C06E4F21A5C1DF00393392 /* WorkControll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkControll.entitlements; sourceTree = "<group>"; };
 		BF79090221A4A54800A0BD99 /* WorkControll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkControll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF79090521A4A54800A0BD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF79090721A4A54800A0BD99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		26C06E3121A551EB00393392 /* TodaysWork */ = {
 			isa = PBXGroup;
 			children = (
+				26C06E4E21A5C11900393392 /* TodaysWork.entitlements */,
 				26C06E3221A551EB00393392 /* TodayViewController.swift */,
 				26C06E3421A551EB00393392 /* MainInterface.storyboard */,
 				26C06E3721A551EB00393392 /* Info.plist */,
@@ -125,6 +128,7 @@
 		BF79090421A4A54800A0BD99 /* WorkControll */ = {
 			isa = PBXGroup;
 			children = (
+				26C06E4F21A5C1DF00393392 /* WorkControll.entitlements */,
 				26C06E4721A58BBA00393392 /* TheDate.swift */,
 				BF79090521A4A54800A0BD99 /* AppDelegate.swift */,
 				BF79090721A4A54800A0BD99 /* ViewController.swift */,
@@ -189,9 +193,19 @@
 				TargetAttributes = {
 					26C06E2C21A551EB00393392 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BF79090121A4A54800A0BD99 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -300,6 +314,7 @@
 		26C06E3B21A551EB00393392 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodaysWork/TodaysWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5268ZTPTL;
 				INFOPLIST_FILE = TodaysWork/Info.plist;
@@ -311,7 +326,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControll.TodaysWork;
+				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControl.TodaysWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -322,6 +337,7 @@
 		26C06E3C21A551EB00393392 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodaysWork/TodaysWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5268ZTPTL;
 				INFOPLIST_FILE = TodaysWork/Info.plist;
@@ -332,7 +348,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControll.TodaysWork;
+				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControl.TodaysWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -459,6 +475,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkControll/WorkControll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5268ZTPTL;
 				INFOPLIST_FILE = WorkControll/Info.plist;
@@ -466,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControll;
+				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +495,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkControll/WorkControll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5268ZTPTL;
 				INFOPLIST_FILE = WorkControll/Info.plist;
@@ -485,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControll;
+				PRODUCT_BUNDLE_IDENTIFIER = AI.WorkControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
