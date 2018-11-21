@@ -19,12 +19,20 @@ class ViewController: UIViewController {
     var percent = 0.0
     var currentDate = Date.timeIntervalSinceReferenceDate
     var lastDate: Double = UserDefaults.standard.double(forKey: "lastDate")
+    
     var isContinue: Bool = false
     
     static let workingHours = 520.0 * 60.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let request = Request()
+        request.doRequest(completion: { [weak self] currentd in
+            UserDefaults.standard.set(currentd, forKey: "lastDate")
+            self?.lastDate = currentd
+        })
+        
         if lastDate == 0 {
             lastDate = Date.timeIntervalSinceReferenceDate
         }
@@ -39,8 +47,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startButtonTapped(_ sender: Any) {
-        lastDate = Date.timeIntervalSinceReferenceDate
-        UserDefaults.standard.set(lastDate, forKey: "lastDate")
+        let request = Request()
+        request.doRequest(completion: { [weak self] currentd in
+            UserDefaults.standard.set(currentd, forKey: "lastDate")
+            self?.lastDate = currentd
+        })
+        
     }
     
     @objc func doOnTimer() {

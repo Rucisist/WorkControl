@@ -48,8 +48,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     @IBAction func typeButtonPress(_ sender: Any) {
-        lastDate = Date.timeIntervalSinceReferenceDate
-        UserDefaults.standard.set(lastDate, forKey: "lastDate")
+        self.lastDate = UserDefaults.standard.double(forKey: "lastDate")
     }
     
     @objc func doOnTimer() {
