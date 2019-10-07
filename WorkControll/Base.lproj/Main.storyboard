@@ -48,14 +48,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-Oc-4Ah">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-Oc-4Ah">
                                 <rect key="frame" x="243" y="625" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="О разработчике"/>
+                                <connections>
+                                    <action selector="doOnDeveloperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSe-ws-hMR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QtN-Oc-4Ah" secondAttribute="bottom" constant="12" id="1Z6-6f-BWH"/>
                             <constraint firstItem="Q0H-U1-CBV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="29q-kX-SyD"/>
                             <constraint firstItem="Q0H-U1-CBV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3n1-3R-Axy"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yS-Gv-pzQ"/>
@@ -70,6 +73,7 @@
                             <constraint firstItem="UST-gP-1lj" firstAttribute="top" secondItem="Q0H-U1-CBV" secondAttribute="bottom" constant="50" id="kGo-Ew-Two"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UST-gP-1lj" secondAttribute="trailing" constant="25" id="li6-8h-k2P"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="p4N-Ov-jG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QtN-Oc-4Ah" secondAttribute="trailing" constant="16" id="ybO-yf-hOv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

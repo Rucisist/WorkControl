@@ -66,7 +66,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    @IBAction func doOnDeveloperButton(_ sender: Any) {
+        let newView = UIView(frame: CGRect.init(origin: CGPoint.init(x: self.view.frame.width / 2 - 50, y: self.view.frame.height / 2 - 50), size: CGSize.init(width: 100, height: 100)))
+        
+        newView.backgroundColor = .green
+        
+        view.addSubview(newView)
+    }
+    
     @IBAction func startButtonTapped(_ sender: Any) {
         let request = Request()
         request.doRequest(completion: { [weak self] currentd in
