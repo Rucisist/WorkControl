@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelTo: UILabel!
     @IBOutlet weak var labelFrom: UILabel!
     @IBOutlet weak var circleView: CircleView!
+    
+    fileprivate var longGestureRecognizer: UILongPressGestureRecognizer?
+    
     var timer = Timer()
     
     var percent = 0.0
@@ -44,6 +47,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        longGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(doAtLongGesture))
+        if let tap = longGestureRecognizer {
+            view.addGestureRecognizer(tap)
+        }
         pickerView.delegate = self
         pickerView.dataSource = self
         let request = Request()
@@ -141,3 +148,9 @@ extension ViewController:  UIPickerViewDelegate, UIPickerViewDataSource {
     
 }
 
+extension ViewController {
+    @objc func doAtLongGesture() {
+        let controller = UIAlertController.init(title: "Время", message: "нужно отработать с 9 до 11 15. + 8 часов 40 минут", preferredStyle: .alert)
+        present(controller, animated: true, completion: nil)
+    }
+}
