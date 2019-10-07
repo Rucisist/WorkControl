@@ -71,6 +71,11 @@ class ViewController: UIViewController {
     @IBAction func doOnDeveloperButton(_ sender: Any) {
         let newView = UIView(frame: CGRect.init(origin: CGPoint.init(x: self.view.frame.width / 2 - 50, y: self.view.frame.height / 2 - 50), size: CGSize.init(width: 100, height: 100)))
         
+        let devDescriptionLabel: UILabel = UILabel.init(frame: CGRect(x: 10, y: 40, width: 60, height: 20))
+        devDescriptionLabel.textColor = .black
+        devDescriptionLabel.text = "madeByAIS"
+        newView.addSubview(devDescriptionLabel)
+        
         newView.backgroundColor = .green
         
         view.addSubview(newView)
