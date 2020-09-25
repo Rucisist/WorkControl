@@ -81,7 +81,9 @@ class ViewController: UIViewController {
         let devDescriptionLabel: UILabel = UILabel.init(frame: CGRect(x: 10, y: 40, width: 60, height: 20))
         devDescriptionLabel.textColor = .black
         devDescriptionLabel.text = "madeByAIS"
-        newView.addSubview(devDescriptionLabel)
+//        newView.addSubview(devDescriptionLabel)
+        
+        self.show(vc: DeveloperVC.init(versionNumber: UserDefaults.standard.integer(forKey: "versionNumber")))
         
         newView.backgroundColor = .green
         
@@ -138,6 +140,10 @@ extension ViewController:  UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
+        
         let request = Request()
         request.doRequest(completion: { [weak self] currentd in
             UserDefaults.standard.set(currentd, forKey: "lastDate")
