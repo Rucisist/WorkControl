@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +23,7 @@
                                     <constraint firstAttribute="width" secondItem="UST-gP-1lj" secondAttribute="height" multiplier="1:1" id="V5Q-dr-zPu"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-iz-uoe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-iz-uoe">
                                 <rect key="frame" x="91" y="310.5" width="193" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Tap here to start">
@@ -36,7 +34,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0H-U1-CBV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="101"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnG-i2-9gg">
                                 <rect key="frame" x="152" y="526" width="71" height="36"/>
@@ -48,14 +46,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-Oc-4Ah">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-Oc-4Ah">
                                 <rect key="frame" x="243" y="625" width="116" height="30"/>
                                 <state key="normal" title="О разработчике"/>
                                 <connections>
                                     <action selector="doOnDeveloperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSe-ws-hMR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpL-zx-Gf7">
+                                <rect key="frame" x="164" y="504" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QtN-Oc-4Ah" secondAttribute="bottom" constant="12" id="1Z6-6f-BWH"/>
@@ -63,21 +66,25 @@
                             <constraint firstItem="Q0H-U1-CBV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3n1-3R-Axy"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yS-Gv-pzQ"/>
                             <constraint firstItem="gI9-ud-juf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pA-BZ-Kf5"/>
+                            <constraint firstItem="gI9-ud-juf" firstAttribute="top" secondItem="EpL-zx-Gf7" secondAttribute="bottom" constant="48" id="COi-y8-wEn"/>
+                            <constraint firstItem="EpL-zx-Gf7" firstAttribute="top" secondItem="UST-gP-1lj" secondAttribute="bottom" constant="8" symbolic="YES" id="DDe-Xb-y2K"/>
                             <constraint firstItem="PnG-i2-9gg" firstAttribute="top" secondItem="UST-gP-1lj" secondAttribute="bottom" constant="30" id="JeR-4i-8JN"/>
                             <constraint firstAttribute="trailing" secondItem="Q0H-U1-CBV" secondAttribute="trailing" id="MkP-jw-7Xh"/>
                             <constraint firstItem="gI9-ud-juf" firstAttribute="top" secondItem="PnG-i2-9gg" secondAttribute="bottom" constant="20" id="SO4-1Z-5xs"/>
                             <constraint firstItem="4yf-iz-uoe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uoz-RE-pv7"/>
                             <constraint firstItem="PnG-i2-9gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zon-Zq-kkb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EpL-zx-Gf7" secondAttribute="trailing" constant="165" id="bmq-SH-mdJ"/>
                             <constraint firstItem="4yf-iz-uoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQY-UV-XOZ"/>
+                            <constraint firstItem="EpL-zx-Gf7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="jlA-Xm-6Qd"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kGN-3K-3TQ"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="top" secondItem="Q0H-U1-CBV" secondAttribute="bottom" constant="50" id="kGo-Ew-Two"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UST-gP-1lj" secondAttribute="trailing" constant="25" id="li6-8h-k2P"/>
                             <constraint firstItem="UST-gP-1lj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="p4N-Ov-jG9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QtN-Oc-4Ah" secondAttribute="trailing" constant="16" id="ybO-yf-hOv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonDate" destination="EpL-zx-Gf7" id="cZD-cs-Jeu"/>
                         <outlet property="circleView" destination="UST-gP-1lj" id="zdJ-s3-1cy"/>
                         <outlet property="labelFrom" destination="PnG-i2-9gg" id="VCe-ID-wPR"/>
                         <outlet property="labelTo" destination="gI9-ud-juf" id="2Ug-3g-r8g"/>
