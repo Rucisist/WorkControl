@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260746E92526435700B5021D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260746E82526435700B5021D /* Animator.swift */; };
 		26C06E3021A551EB00393392 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C06E2F21A551EB00393392 /* NotificationCenter.framework */; };
 		26C06E3321A551EB00393392 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C06E3221A551EB00393392 /* TodayViewController.swift */; };
 		26C06E3621A551EB00393392 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C06E3421A551EB00393392 /* MainInterface.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		260746E82526435700B5021D /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		26C06E2D21A551EB00393392 /* TodaysWork.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodaysWork.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C06E2F21A551EB00393392 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		26C06E3221A551EB00393392 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				BF79091721A4A5F500A0BD99 /* CircleView.swift */,
 				BF79090C21A4A54B00A0BD99 /* Assets.xcassets */,
 				BF866B16251D42EA002C598D /* VersionVC.swift */,
+				260746E82526435700B5021D /* Animator.swift */,
 				BF79090E21A4A54B00A0BD99 /* LaunchScreen.storyboard */,
 				BF79091121A4A54B00A0BD99 /* Info.plist */,
 			);
@@ -275,6 +278,7 @@
 				BF79091821A4A5F500A0BD99 /* CircleView.swift in Sources */,
 				26C06E4521A563E300393392 /* Request.swift in Sources */,
 				BF866B19251D438B002C598D /* Router.swift in Sources */,
+				260746E92526435700B5021D /* Animator.swift in Sources */,
 				BF866B17251D42EA002C598D /* VersionVC.swift in Sources */,
 				BF79090821A4A54800A0BD99 /* ViewController.swift in Sources */,
 				BF79090621A4A54800A0BD99 /* AppDelegate.swift in Sources */,
