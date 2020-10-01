@@ -17,6 +17,8 @@ protocol Routable {
 
 extension UIViewController {
     func show(vc: UIViewController) {
-        self.present(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: { in
+            Animator.animate(view: vc.view)
+        })
     }
 }
