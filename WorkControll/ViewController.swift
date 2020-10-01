@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var satrtButton: UIButton!
     
     @IBOutlet weak var labelTo: UILabel!
+    @IBOutlet weak var buttonDate: UIButton!
     @IBOutlet weak var labelFrom: UILabel!
     @IBOutlet weak var circleView: CircleView!
     
@@ -67,6 +68,9 @@ class ViewController: UIViewController {
         circleView.backgroundColor = view.backgroundColor
         
         timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(doOnTimer), userInfo: nil, repeats: true)
+        let time = Date.init(timeIntervalSinceReferenceDate: TheDate.shared.date!)
+        
+        buttonDate.setTitle(time.dateString ,for: .normal)
     }
 
     override func didReceiveMemoryWarning() {

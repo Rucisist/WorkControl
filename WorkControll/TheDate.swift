@@ -13,8 +13,6 @@ class TheDate {
     var date: Double?
 }
 
-let stringDate = "2017-05-25 20:45:21"
-
 
 extension Date {
     var dateString: String {
