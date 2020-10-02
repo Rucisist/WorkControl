@@ -145,9 +145,7 @@ extension ViewController:  UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
-        
+        Haptic.impact(.light).generate()
         let request = Request()
         request.doRequest(completion: { [weak self] currentd in
             UserDefaults.standard.set(currentd, forKey: "lastDate")
