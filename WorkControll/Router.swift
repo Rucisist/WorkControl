@@ -18,6 +18,7 @@ protocol Routable {
 extension UIViewController {
     func show(vc: UIViewController) {
         self.present(vc, animated: true, completion: {
+            Haptic.impact(.light).generate()
             Animator.animate(view: vc.view)
         })
     }
