@@ -29,6 +29,7 @@
 		FEB2CAF32ACBC3E500559D41 /* Date+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */; };
 		FEB2CAF52ACBC4D600559D41 /* OnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF42ACBC4D600559D41 /* OnMain.swift */; };
 		FEB2CAF92ACBC84200559D41 /* counters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF82ACBC84200559D41 /* counters.swift */; };
+		FEB2CAFB2ACBC92A00559D41 /* IsRTLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAFA2ACBC92A00559D41 /* IsRTLImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Distance.swift"; sourceTree = "<group>"; };
 		FEB2CAF42ACBC4D600559D41 /* OnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnMain.swift; sourceTree = "<group>"; };
 		FEB2CAF82ACBC84200559D41 /* counters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = counters.swift; sourceTree = "<group>"; };
+		FEB2CAFA2ACBC92A00559D41 /* IsRTLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsRTLImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				FEB2CAF82ACBC84200559D41 /* counters.swift */,
 				BF79090921A4A54900A0BD99 /* Main.storyboard */,
 				BF79091721A4A5F500A0BD99 /* CircleView.swift */,
+				FEB2CAFA2ACBC92A00559D41 /* IsRTLImage.swift */,
 				BF79090C21A4A54B00A0BD99 /* Assets.xcassets */,
 				BF866B16251D42EA002C598D /* VersionVC.swift */,
 				260746E82526435700B5021D /* Animator.swift */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB2CAF92ACBC84200559D41 /* counters.swift in Sources */,
+				FEB2CAFB2ACBC92A00559D41 /* IsRTLImage.swift in Sources */,
 				26C06E4821A58BBA00393392 /* TheDate.swift in Sources */,
 				BF79091821A4A5F500A0BD99 /* CircleView.swift in Sources */,
 				26C06E4521A563E300393392 /* Request.swift in Sources */,
