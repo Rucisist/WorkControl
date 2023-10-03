@@ -28,6 +28,7 @@
 		BF866B19251D438B002C598D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF866B18251D438B002C598D /* Router.swift */; };
 		FEB2CAF32ACBC3E500559D41 /* Date+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */; };
 		FEB2CAF52ACBC4D600559D41 /* OnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF42ACBC4D600559D41 /* OnMain.swift */; };
+		FEB2CAF92ACBC84200559D41 /* counters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF82ACBC84200559D41 /* counters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		BF866B18251D438B002C598D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Distance.swift"; sourceTree = "<group>"; };
 		FEB2CAF42ACBC4D600559D41 /* OnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnMain.swift; sourceTree = "<group>"; };
+		FEB2CAF82ACBC84200559D41 /* counters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = counters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				26589A9C2527204D00016863 /* HapticEngine.swift */,
 				FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */,
 				FEB2CAF42ACBC4D600559D41 /* OnMain.swift */,
+				FEB2CAF82ACBC84200559D41 /* counters.swift */,
 				BF79090921A4A54900A0BD99 /* Main.storyboard */,
 				BF79091721A4A5F500A0BD99 /* CircleView.swift */,
 				BF79090C21A4A54B00A0BD99 /* Assets.xcassets */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB2CAF92ACBC84200559D41 /* counters.swift in Sources */,
 				26C06E4821A58BBA00393392 /* TheDate.swift in Sources */,
 				BF79091821A4A5F500A0BD99 /* CircleView.swift in Sources */,
 				26C06E4521A563E300393392 /* Request.swift in Sources */,
