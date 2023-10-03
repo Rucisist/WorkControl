@@ -26,6 +26,7 @@
 		BF79091821A4A5F500A0BD99 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79091721A4A5F500A0BD99 /* CircleView.swift */; };
 		BF866B17251D42EA002C598D /* VersionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF866B16251D42EA002C598D /* VersionVC.swift */; };
 		BF866B19251D438B002C598D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF866B18251D438B002C598D /* Router.swift */; };
+		FEB2CAF32ACBC3E500559D41 /* Date+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		BF79091721A4A5F500A0BD99 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BF866B16251D42EA002C598D /* VersionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionVC.swift; sourceTree = "<group>"; };
 		BF866B18251D438B002C598D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Distance.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				26C06E4421A563E300393392 /* Request.swift */,
 				BF866B18251D438B002C598D /* Router.swift */,
 				26589A9C2527204D00016863 /* HapticEngine.swift */,
+				FEB2CAF22ACBC3E500559D41 /* Date+Distance.swift */,
 				BF79090921A4A54900A0BD99 /* Main.storyboard */,
 				BF79091721A4A5F500A0BD99 /* CircleView.swift */,
 				BF79090C21A4A54B00A0BD99 /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 				BF79091821A4A5F500A0BD99 /* CircleView.swift in Sources */,
 				26C06E4521A563E300393392 /* Request.swift in Sources */,
 				BF866B19251D438B002C598D /* Router.swift in Sources */,
+				FEB2CAF32ACBC3E500559D41 /* Date+Distance.swift in Sources */,
 				26589A9D2527204D00016863 /* HapticEngine.swift in Sources */,
 				260746E92526435700B5021D /* Animator.swift in Sources */,
 				BF866B17251D42EA002C598D /* VersionVC.swift in Sources */,
